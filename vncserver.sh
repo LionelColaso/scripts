@@ -29,8 +29,6 @@ read -p "Do you want change your VNC server Password[Y/N ] " tc_vncpass
 	fi
 fi
 echo "Step 1: Generating autostart script for VNC session..."
-read -p "Enter your display resolution for VNC session (i.e. 800x600, 1024x768):- " tc_server
-read -p "Enter depth for VNC session (i.e. 16, 24, 32):- " tc_depth
 cd /etc/init.d/
 if [ -f vncserver ]
 then
